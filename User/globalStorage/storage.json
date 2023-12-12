@@ -56,8 +56,7 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reabrir o Editor Fechado",
-                                    "enabled": false
+                                    "label": "&&Reabrir o Editor Fechado"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -786,8 +785,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Localização da Última Edição",
-                        "enabled": false
+                        "label": "&&Localização da Última Edição"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1705,10 +1703,10 @@
             "backupPath": "/var/www/domu/Backups/bb6f5c598840dd8edfd9d5ba499673d3",
             "uiState": {
                 "mode": 0,
-                "x": 0,
-                "y": 64,
-                "width": 1920,
-                "height": 1016
+                "x": 2233,
+                "y": 228,
+                "width": 1387,
+                "height": 752
             }
         },
         "openedWindows": []
