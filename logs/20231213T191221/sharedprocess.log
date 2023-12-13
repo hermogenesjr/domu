@@ -1,0 +1,17 @@
+2023-12-13 19:12:26.981 [info] Getting Manifest... ms-ceintl.vscode-language-pack-pt-br
+2023-12-13 19:12:27.074 [info] Installing extension: ms-ceintl.vscode-language-pack-pt-br
+2023-12-13 19:12:28.524 [info] Extension signature is verified: ms-ceintl.vscode-language-pack-pt-br
+2023-12-13 19:12:28.578 [info] Extracted extension to file:///root/.vscode/extensions/ms-ceintl.vscode-language-pack-pt-br-1.85.2023121309: ms-ceintl.vscode-language-pack-pt-br
+2023-12-13 19:12:28.582 [info] Renamed to /root/.vscode/extensions/ms-ceintl.vscode-language-pack-pt-br-1.85.2023121309
+2023-12-13 19:12:28.583 [info] Extracting extension completed. ms-ceintl.vscode-language-pack-pt-br
+2023-12-13 19:12:28.588 [info] Adding language packs from the extension ms-ceintl.vscode-language-pack-pt-br
+2023-12-13 19:12:28.606 [info] Marked extension as uninstalled ms-ceintl.vscode-language-pack-pt-br-1.85.2023120618
+2023-12-13 19:12:28.642 [info] Extension installed successfully: ms-ceintl.vscode-language-pack-pt-br
+2023-12-13 19:12:28.666 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30056)
+    at a (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30170)
+    at s.fb (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36175)
+    at s.stat (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:28621)
+    at async E.stat (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:15732)
+    at async Y.tb (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:100:111319)
+2023-12-13 19:13:03.283 [error] [uncaught exception in sharedProcess]: Ocorreu um erro no sistema (ENOENT: no such file or directory, scandir '/var/www/domu/clp/b8abadf4c2cd4860afc341c6956cd99f.pt-br'): Error: ENOENT: no such file or directory, scandir '/var/www/domu/clp/b8abadf4c2cd4860afc341c6956cd99f.pt-br'

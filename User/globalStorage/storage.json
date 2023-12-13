@@ -56,7 +56,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reabrir o Editor Fechado"
+                                    "label": "&&Reabrir o Editor Fechado",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -776,7 +777,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Voltar"
+                        "label": "&&Voltar",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -785,7 +787,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Localização da Última Edição"
+                        "label": "&&Localização da Última Edição",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
