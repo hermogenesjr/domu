@@ -1,0 +1,16 @@
+[Info  - 19:16:45] Initialising intelephense 1.10.2
+[Info  - 19:16:45] Initialised in 6 ms
+[Info  - 19:16:45] Environment changed. Refreshing 1 in memory documents.
+[Info  - 19:16:45] Searching file:///root/.vscode/extensions/bmewburn.vscode-intelephense-client-1.10.2/node_modules/intelephense/lib/stub for files to index.
+[Info  - 19:16:45] Searching file:///var/www/domu for files to index.
+[Warn  - 19:16:46] file:///var/www/domu/vendor/composer/autoload_static.php is over the maximum file size of 1000000 bytes.
+[Warn  - 19:16:46] file:///var/www/domu/vendor/fakerphp/faker/src/Faker/Provider/nl_BE/Text.php is over the maximum file size of 1000000 bytes.
+[Info  - 19:16:46] Indexing started.
+[Info  - 19:16:46] Searching file:///var/www/domu/User/globalStorage/bmewburn.vscode-intelephense-client for files to index.
+[Info  - 19:16:46] Searching file:///var/www/domu/User/workspaceStorage/6893434082cbab16d068b9d5d8cc171c/bmewburn.vscode-intelephense-client for files to index.
+[Info  - 19:16:46] Searching file:///var/www/domu/logs/20231213T191221/window1/exthost/output_logging_20231213T191223 for files to index.
+[Info  - 19:16:53] Indexing ended. 10878 files indexed in 7s.
+[Info  - 19:16:53] Writing state to /var/www/domu/User/workspaceStorage/6893434082cbab16d068b9d5d8cc171c/bmewburn.vscode-intelephense-client/62a6b558.
+[Info  - 19:16:54] Wrote state in 0.6s.
+[Warn  - 19:16:55] Error: ENOENT: no such file or directory, stat '/var/www/domu/User/globalStorage/state.vscdb-journal'
+[Warn  - 19:21:07] Error: ENOENT: no such file or directory, stat '/var/www/domu/User/globalStorage/state.vscdb-journal'

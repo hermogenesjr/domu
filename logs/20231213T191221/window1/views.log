@@ -9,3 +9,7 @@
 2023-12-13 19:12:23.072 [info] Added views:workbench.debug.welcome in workbench.view.debug
 2023-12-13 19:12:23.826 [info] Added views:workbench.panel.repl.view in workbench.panel.repl
 2023-12-13 19:12:24.576 [info] Added views:~remote.forwardedPorts in ~remote.forwardedPortsContainer
+2023-12-13 19:16:09.858 [info] Added views:workbench.views.extensions.installed,workbench.views.extensions.popular,extensions.recommendedList in workbench.view.extensions
+2023-12-13 19:16:09.862 [info] Removed views:workbench.views.extensions.popular from workbench.view.extensions
+2023-12-13 19:16:19.364 [info] Added views:dockerContainers,dockerImages,dockerRegistries,dockerNetworks,dockerVolumes,vscode-docker.views.dockerContexts,vscode-docker.views.help in workbench.view.extension.dockerView
+2023-12-13 19:16:27.559 [info] Added views:targetsContainers,devVolumes in workbench.view.remote

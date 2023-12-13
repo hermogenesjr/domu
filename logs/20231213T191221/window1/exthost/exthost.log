@@ -11,3 +11,8 @@
 2023-12-13 19:12:24.639 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
 2023-12-13 19:12:24.822 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
 2023-12-13 19:13:32.122 [warning] [Decorations] CAPPING events from decorations provider vscode.git 254
+2023-12-13 19:16:27.586 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+2023-12-13 19:16:45.167 [info] ExtensionService#_doActivateExtension bmewburn.vscode-intelephense-client, startup: false, activationEvent: 'onLanguage:php'
+2023-12-13 19:21:39.028 [warning] Using default string since no string found in i18n bundle that has the key: There are no staged changes to commit.
+
+Would you like to stage all your changes and commit them directly?
