@@ -14,6 +14,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Rawilk\FilamentPasswordInput\Password;
 
 class UserResource extends Resource
 {
@@ -28,7 +29,9 @@ class UserResource extends Resource
                 //
                 TextInput::make('name')->required(),
                 TextInput::make('email')->email(),
-                TextInput::make('password')->password()
+                Password::make('password')
+                ->label('Password')
+                ->regeneratePassword(),
             ]);
     }
 
