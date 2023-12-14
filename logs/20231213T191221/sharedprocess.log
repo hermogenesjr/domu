@@ -57,3 +57,73 @@
     at s.stat (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:28621)
     at async E.stat (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:15732)
     at async Y.tb (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:100:111319)
+2023-12-13 19:23:16.093 [info] Getting Manifest... github.vscode-pull-request-github
+2023-12-13 19:23:16.101 [info] Installing extension: github.vscode-pull-request-github
+2023-12-13 19:23:18.577 [info] Getting Manifest... vscodevim.vim
+2023-12-13 19:23:18.582 [info] Installing extension: vscodevim.vim
+2023-12-13 19:23:19.888 [info] Extension signature is verified: github.vscode-pull-request-github
+2023-12-13 19:23:19.932 [info] Extracted extension to file:///root/.vscode/extensions/github.vscode-pull-request-github-0.78.0: github.vscode-pull-request-github
+2023-12-13 19:23:19.940 [info] Renamed to /root/.vscode/extensions/github.vscode-pull-request-github-0.78.0
+2023-12-13 19:23:19.947 [info] Extracting extension completed. github.vscode-pull-request-github
+2023-12-13 19:23:19.959 [info] Extension installed successfully: github.vscode-pull-request-github
+2023-12-13 19:23:20.032 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30056)
+    at a (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30170)
+    at s.fb (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36175)
+    at s.stat (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:28621)
+    at async E.stat (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:15732)
+    at async Y.tb (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:100:111319)
+2023-12-13 19:23:20.278 [info] Extension signature is verified: vscodevim.vim
+2023-12-13 19:23:20.304 [info] Extracted extension to file:///root/.vscode/extensions/vscodevim.vim-1.27.1: vscodevim.vim
+2023-12-13 19:23:20.309 [info] Renamed to /root/.vscode/extensions/vscodevim.vim-1.27.1
+2023-12-13 19:23:20.310 [info] Extracting extension completed. vscodevim.vim
+2023-12-13 19:23:20.316 [info] Extension installed successfully: vscodevim.vim
+2023-12-13 19:23:20.389 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30056)
+    at a (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30170)
+    at s.fb (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36175)
+    at s.stat (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:28621)
+    at async E.stat (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:15732)
+    at async Y.tb (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:100:111319)
+2023-12-13 19:23:22.560 [info] Getting Manifest... johnstoncode.svn-scm
+2023-12-13 19:23:22.568 [info] Installing extension: johnstoncode.svn-scm
+2023-12-13 19:23:24.196 [info] Extension signature is verified: johnstoncode.svn-scm
+2023-12-13 19:23:24.244 [info] Extracted extension to file:///root/.vscode/extensions/johnstoncode.svn-scm-2.17.0: johnstoncode.svn-scm
+2023-12-13 19:23:24.249 [info] Renamed to /root/.vscode/extensions/johnstoncode.svn-scm-2.17.0
+2023-12-13 19:23:24.251 [info] Extracting extension completed. johnstoncode.svn-scm
+2023-12-13 19:23:24.256 [info] Extension installed successfully: johnstoncode.svn-scm
+2023-12-13 19:23:24.329 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30056)
+    at a (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30170)
+    at s.fb (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36175)
+    at s.stat (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:28621)
+    at async E.stat (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:15732)
+    at async Y.tb (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:100:111319)
+2023-12-13 19:23:25.415 [info] Getting Manifest... xdebug.php-debug
+2023-12-13 19:23:25.425 [info] Installing extension: xdebug.php-debug
+2023-12-13 19:23:28.109 [info] Extension signature is verified: xdebug.php-debug
+2023-12-13 19:23:28.350 [info] Extracted extension to file:///root/.vscode/extensions/xdebug.php-debug-1.34.0: xdebug.php-debug
+2023-12-13 19:23:28.355 [info] Renamed to /root/.vscode/extensions/xdebug.php-debug-1.34.0
+2023-12-13 19:23:28.356 [info] Extracting extension completed. xdebug.php-debug
+2023-12-13 19:23:28.363 [info] Extension installed successfully: xdebug.php-debug
+2023-12-13 19:23:28.434 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30056)
+    at a (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30170)
+    at s.fb (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36175)
+    at s.stat (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:28621)
+    at async E.stat (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:15732)
+    at async Y.tb (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:100:111319)
+2023-12-13 19:23:32.774 [info] Getting Manifest... eamodio.gitlens
+2023-12-13 19:23:32.784 [info] Installing extension: eamodio.gitlens
+2023-12-13 19:23:38.755 [info] Extension signature is verified: eamodio.gitlens
+2023-12-13 19:23:38.915 [info] Extracted extension to file:///root/.vscode/extensions/eamodio.gitlens-14.6.0: eamodio.gitlens
+2023-12-13 19:23:38.926 [info] Renamed to /root/.vscode/extensions/eamodio.gitlens-14.6.0
+2023-12-13 19:23:38.930 [info] Extracting extension completed. eamodio.gitlens
+2023-12-13 19:23:38.938 [info] Extension installed successfully: eamodio.gitlens
+2023-12-13 19:23:39.008 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30056)
+    at a (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30170)
+    at s.fb (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36175)
+    at s.stat (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:28621)
+    at async E.stat (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:15732)
+    at async Y.tb (/snap/code/148/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:100:111319)

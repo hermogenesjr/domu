@@ -137,6 +137,21 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
+                                    "id": "issue.copyGithubPermalink",
+                                    "label": "Copiar o Permalink do GitHub"
+                                },
+                                {
+                                    "id": "issue.copyMarkdownGithubPermalink",
+                                    "label": "Copiar o GitHub Permalink como Markdown"
+                                },
+                                {
+                                    "id": "issue.copyGithubHeadLink",
+                                    "label": "Copiar Link Principal do GitHub"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
                                     "id": "workbench.profiles.actions.exportProfile",
                                     "label": "Exportar Perfil (Padrão)..."
                                 },
@@ -307,6 +322,33 @@
                     {
                         "id": "editor.action.clipboardCopyAction",
                         "label": "&&Copiar"
+                    },
+                    {
+                        "id": "submenuitem.MenubarCopy",
+                        "label": "Copiar como",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "gitlens.copyRemoteFileUrlToClipboard",
+                                    "label": "Copy Remote File URL"
+                                },
+                                {
+                                    "id": "gitlens.copyRemoteFileUrlFrom",
+                                    "label": "Copy Remote File URL From..."
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "issue.copyGithubPermalink",
+                                    "label": "Copiar o Permalink do GitHub"
+                                },
+                                {
+                                    "id": "issue.copyMarkdownGithubPermalink",
+                                    "label": "Copiar o GitHub Permalink como Markdown"
+                                }
+                            ]
+                        }
                     },
                     {
                         "id": "editor.action.clipboardPasteAction",
@@ -663,6 +705,13 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
+                                    "id": "workbench.action.splitEditorInGroup",
+                                    "label": "Dividir em &&Grupos"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
                                     "id": "workbench.action.moveEditorToNewWindow",
                                     "label": "&&Mover Editor em Nova Janela"
                                 },
@@ -762,8 +811,7 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Quebra De Texto",
-                        "enabled": false
+                        "label": "&&Quebra De Texto"
                     }
                 ]
             },
@@ -1449,6 +1497,11 @@
                 "isNative": false,
                 "userSettingsLabel": "ctrl+k ctrl+\\"
             },
+            "workbench.action.splitEditorInGroup": {
+                "label": "Ctrl+K Ctrl+Shift+\\",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k ctrl+shift+\\"
+            },
             "workbench.action.toggleEditorGroupLayout": {
                 "label": "Shift+Alt+0",
                 "userSettingsLabel": "shift+alt+0"
@@ -1462,8 +1515,9 @@
                 "userSettingsLabel": "ctrl+shift+f"
             },
             "workbench.view.scm": {
-                "label": "Ctrl+Shift+G",
-                "userSettingsLabel": "ctrl+shift+g"
+                "label": "Ctrl+Shift+G G",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+shift+g g"
             },
             "workbench.view.debug": {
                 "label": "Ctrl+Shift+D",

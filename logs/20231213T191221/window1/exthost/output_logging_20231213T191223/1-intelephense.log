@@ -14,3 +14,31 @@
 [Info  - 19:16:54] Wrote state in 0.6s.
 [Warn  - 19:16:55] Error: ENOENT: no such file or directory, stat '/var/www/domu/User/globalStorage/state.vscdb-journal'
 [Warn  - 19:21:07] Error: ENOENT: no such file or directory, stat '/var/www/domu/User/globalStorage/state.vscdb-journal'
+[Warn  - 19:22:28] Error: ENOENT: no such file or directory, stat '/var/www/domu/User/workspaceStorage/6893434082cbab16d068b9d5d8cc171c/state.vscdb-journal'
+[Warn  - 19:22:43] Error: ENOENT: no such file or directory, stat '/var/www/domu/User/workspaceStorage/6893434082cbab16d068b9d5d8cc171c/state.vscdb-journal'
+[Warn  - 19:22:58] Error: ENOENT: no such file or directory, stat '/var/www/domu/.org.chromium.Chromium.EbFfCS'
+[Warn  - 19:23:08] Error: ENOENT: no such file or directory, stat '/var/www/domu/User/globalStorage/storage.json.vsctmp'
+[Warn  - 19:23:11] Error: ENOENT: no such file or directory, stat '/var/www/domu/.org.chromium.Chromium.2Co1cT'
+[Warn  - 19:23:17] Error: ENOENT: no such file or directory, stat '/var/www/domu/Cache/Cache_Data/e74505c6312aea5d_0'
+[Warn  - 19:23:18] Error: ENOENT: no such file or directory, stat '/var/www/domu/Cache/Cache_Data/80788565a5e94106_0'
+[Warn  - 19:23:18] Error: ENOENT: no such file or directory, stat '/var/www/domu/Cache/Cache_Data/ef4e60e846487647_0'
+[Warn  - 19:23:18] Error: ENOENT: no such file or directory, stat '/var/www/domu/Cache/Cache_Data/ef4e60e846487647_0'
+[Warn  - 19:23:18] Error: ENOENT: no such file or directory, stat '/var/www/domu/Cache/Cache_Data/ef4e60e846487647_0'
+[Warn  - 19:23:18] Error: ENOENT: no such file or directory, stat '/var/www/domu/Cache/Cache_Data/ef4e60e846487647_0'
+[Warn  - 19:23:18] Error: ENOENT: no such file or directory, stat '/var/www/domu/Cache/Cache_Data/ef4e60e846487647_0'
+[Warn  - 19:23:18] Error: ENOENT: no such file or directory, stat '/var/www/domu/Cache/Cache_Data/ef4e60e846487647_0'
+[Warn  - 19:23:19] Error: ENOENT: no such file or directory, stat '/var/www/domu/Cache/Cache_Data/dd7347556cfb746d_0'
+[Warn  - 19:23:20] Error: ENOENT: no such file or directory, stat '/var/www/domu/CachedExtensionVSIXs/github.vscode-pull-request-github-0.78.0.sigzip'
+[Info  - 19:23:21] Searching file:///var/www/domu/User/globalStorage/github.vscode-pull-request-github for files to index.
+[Info  - 19:23:21] Searching file:///var/www/domu/User/globalStorage/github.vscode-pull-request-github/temp for files to index.
+[Info  - 19:23:21] Searching file:///var/www/domu/logs/20231213T191221/window1/exthost/GitHub.vscode-pull-request-github for files to index.
+[Info  - 19:23:21] Searching file:///var/www/domu/logs/20231213T191221/window1/exthost/vscodevim.vim for files to index.
+[Warn  - 19:23:23] Error: ENOENT: no such file or directory, stat '/var/www/domu/Cache/Cache_Data/3512abcd4e884104_0'
+[Warn  - 19:23:25] Error: ENOENT: no such file or directory, stat '/var/www/domu/CachedExtensionVSIXs/johnstoncode.svn-scm-2.17.0.sigzip'
+[Warn  - 19:23:25] Error: ENOENT: no such file or directory, stat '/var/www/domu/Cache/Cache_Data/37f7d7ecb612356d_0'
+[Warn  - 19:23:27] Error: ENOENT: no such file or directory, stat '/var/www/domu/Cache/Cache_Data/3544642f15fd5c3d_0'
+[Warn  - 19:23:28] Error: ENOENT: no such file or directory, stat '/var/www/domu/CachedExtensionVSIXs/xdebug.php-debug-1.34.0.sigzip'
+[Warn  - 19:23:33] Error: ENOENT: no such file or directory, stat '/var/www/domu/Cache/Cache_Data/b8a0f5e7b35fe210_0'
+[Warn  - 19:23:38] Error: ENOENT: no such file or directory, stat '/var/www/domu/CachedExtensionVSIXs/eamodio.gitlens-14.6.0.sigzip'
+[Info  - 19:23:40] Searching file:///var/www/domu/Service%20Worker/CacheStorage/d5821b43175969acbb9336c0cb4aaba18e5f7e2a for files to index.
+[Warn  - 19:24:38] Error: ENOENT: no such file or directory, stat '/var/www/domu/User/workspaceStorage/6893434082cbab16d068b9d5d8cc171c/state.vscdb-journal'
