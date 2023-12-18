@@ -20,7 +20,7 @@ class UserResource extends Resource
 {
     protected static ?string $model = User::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-s-users';
 
     public static function form(Form $form): Form
     {
@@ -30,8 +30,10 @@ class UserResource extends Resource
                 TextInput::make('name')->required(),
                 TextInput::make('email')->email(),
                 Password::make('password')
+                ->required()
                 ->label('Password')
-                ->regeneratePassword(),
+                ->regeneratePassword()
+                ->passwordRegeneratedMessage('New password was generated!'),
             ]);
     }
 
