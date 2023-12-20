@@ -20,6 +20,7 @@ class RedutoResource extends Resource
     protected static ?string $model = Reduto::class;
 
     protected static ?string $navigationIcon = 'heroicon-s-home-modern';
+    protected static ?string $modelLabel = 'Redutos';
 
     public static function form(Form $form): Form
     {
@@ -41,6 +42,7 @@ class RedutoResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
