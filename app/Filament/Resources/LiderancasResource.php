@@ -20,6 +20,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Http\Request;
 use LaravelLegends\PtBrValidator\Rules\FormatoCep;
 use Filament\Support\RawJs;
+use Filament\Forms\Components\TextInput\Pattern;
 
 class LiderancasResource extends Resource
 {
@@ -33,17 +34,21 @@ class LiderancasResource extends Resource
         return $form
             ->schema([
                 Select::make('id_reduto')
-                ->label('Reduto')
                 ->options(Reduto::all()->pluck('reduto','id')),
                 TextInput::make('nome')->required(),
                 TextInput::make('endereco')->required(),
                 TextInput::make('cep')
                 ->required()
+                ->maxLength(9)
                 ->rule('formato_cep')
-                ->mask('99999-999'),
-                //->mask('99999-099'),
+                ->mask('99999-099')
+                ->placeholder('99999-099'),
                 TextInput::make('bairro')->required(),
-                TextInput::make('telefone')->required(),
+                TextInput::make('telefone')
+                ->rule('celular_com_ddd')
+                ->mask('(99) 99999-9999')
+                ->placeholder('(99) 99999-9999')
+                ->required(),
                 TextInput::make('telefone2'),
                 TextInput::make('email')
                 ->required()
@@ -57,7 +62,7 @@ class LiderancasResource extends Resource
             ->columns([
                 TextColumn::make('id'),
                 TextColumn::make('nome'),
-                TextColumn::make('id_reduto')->label('Reduto'),
+                TextColumn::make('reduto.reduto'),
                 TextColumn::make('telefone')->label('Telefone'),
                 TextColumn::make('email')->label('E-mail'),
             ])

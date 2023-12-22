@@ -13,9 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('reduto', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('reduto');
+        Schema::table('eleitor', function (Blueprint $table) {
+            $table->foreign(['id'], 'eleitor_fk')->references(['id'])->on('liderancas')->onUpdate('CASCADE');
         });
     }
 
@@ -26,6 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reduto');
+        Schema::table('eleitor', function (Blueprint $table) {
+            $table->dropForeign('eleitor_fk');
+        });
     }
 };

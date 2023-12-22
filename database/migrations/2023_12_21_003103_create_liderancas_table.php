@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('lideranca', function (Blueprint $table) {
+        Schema::create('liderancas', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
             $table->string('endereco')->nullable();
@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('telefone2')->nullable();
             $table->string('email')->nullable();
             $table->integer('id_reduto')->nullable();
+            $table->timestamps();
         });
     }
 
@@ -33,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lideranca');
+        Schema::dropIfExists('liderancas');
     }
 };
