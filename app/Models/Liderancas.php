@@ -22,7 +22,8 @@ class Liderancas extends Model
     ];
 
 
-    public function reduto(){
-        return $this->belongsTo(Reduto::class);
+    public function Freduto()
+    {
+        return $this->belongsTo(Reduto::class, 'id_reduto');
     }
 }

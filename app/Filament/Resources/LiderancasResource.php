@@ -29,6 +29,7 @@ class LiderancasResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-cube-transparent';
     protected static ?string $modelLabel = 'Lideranças';
 
+
     public static function form(Form $form): Form
     {
         return $form
@@ -62,7 +63,7 @@ class LiderancasResource extends Resource
             ->columns([
                 TextColumn::make('id'),
                 TextColumn::make('nome'),
-                TextColumn::make('reduto.reduto'),
+                TextColumn::make('Freduto.reduto')->label('Reduto'),
                 TextColumn::make('telefone')->label('Telefone'),
                 TextColumn::make('email')->label('E-mail'),
             ])
