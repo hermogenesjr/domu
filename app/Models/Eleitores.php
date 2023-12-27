@@ -6,12 +6,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\belongsTo;
 
-class Liderancas extends Model
+class Eleitores extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'id',
         'nome',
         'endereco',
         'cep',
@@ -19,12 +18,15 @@ class Liderancas extends Model
         'telefone',
         'telefone2',
         'email',
-        'id_reduto',
+        'id_lideranca',
+        'data_nascimento',
+        'rede_social',
+        'profissao',
     ];
 
 
-    public function Freduto()
+    public function Flideranca()
     {
-        return $this->belongsTo(Reduto::class, 'id_reduto');
+        return $this->belongsTo(Liderancas::class, 'id_lideranca');
     }
 }

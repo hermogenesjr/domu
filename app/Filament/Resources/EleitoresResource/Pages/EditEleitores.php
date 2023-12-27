@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Filament\Resources\UserResource\Pages;
+namespace App\Filament\Resources\EleitoresResource\Pages;
 
-use App\Filament\Resources\UserResource;
+use App\Filament\Resources\EleitoresResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
-class EditUser extends EditRecord
+class EditEleitores extends EditRecord
 {
-    protected static string $resource = UserResource::class;
+    protected static string $resource = EleitoresResource::class;
 
     protected function getRedirectUrl(): string
     {
         return $this->getResource()::getUrl('index');
-    }    
+    }
 
     protected function getHeaderActions(): array
     {

@@ -31,10 +31,13 @@ class UserResource extends Resource
                 TextInput::make('name')->required(),
                 TextInput::make('email')->email(),
                 Password::make('password')
-                ->required()
+                //->required()
+                //->required( fn ($context): bool => $context =='create')
+                //->dehydrated(false)
+                ->required( fn ($context): bool => $context =='create')
                 ->label('Password')
-                ->regeneratePassword()
-                ->passwordRegeneratedMessage('New password was generated!'),
+                //->dehydrateStateUsing(fn (string $state): string => Hash::make($state))
+                ->dehydrated(fn (?string $state): bool => filled($state)),
             ]);
     }
 

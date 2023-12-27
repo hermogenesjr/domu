@@ -10,6 +10,11 @@ class EditLiderancas extends EditRecord
 {
     protected static string $resource = LiderancasResource::class;
 
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }    
+
     protected function getHeaderActions(): array
     {
         return [

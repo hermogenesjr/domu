@@ -10,6 +10,11 @@ class EditReduto extends EditRecord
 {
     protected static string $resource = RedutoResource::class;
 
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
+
     protected function getHeaderActions(): array
     {
         return [

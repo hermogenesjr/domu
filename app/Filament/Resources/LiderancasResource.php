@@ -35,18 +35,21 @@ class LiderancasResource extends Resource
         return $form
             ->schema([
                 Select::make('id_reduto')
-                ->options(Reduto::all()->pluck('reduto','id')),
-                TextInput::make('nome')->required(),
+                ->options(Reduto::all()->pluck('reduto','id'))
+                ->label('Reduto'),
+                TextInput::make('nome')
+                ->label('Nome da Liderança')
+                ->required(),
                 TextInput::make('endereco')->required(),
                 TextInput::make('cep')
                 ->required()
                 ->maxLength(9)
-                ->rule('formato_cep')
-                ->mask('99999-099')
-                ->placeholder('99999-099'),
+                //->rule('formato_cep')
+                ->mask('99999-999')
+                ->placeholder('99999-999'),
                 TextInput::make('bairro')->required(),
                 TextInput::make('telefone')
-                ->rule('celular_com_ddd')
+                //->rule('celular_com_ddd')
                 ->mask('(99) 99999-9999')
                 ->placeholder('(99) 99999-9999')
                 ->required(),

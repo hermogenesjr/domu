@@ -9,4 +9,9 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateLiderancas extends CreateRecord
 {
     protected static string $resource = LiderancasResource::class;
+
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
 }
