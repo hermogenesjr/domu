@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Models\Reduto;
+use App\Models\User;
 
 use App\Filament\Resources\LiderancasResource\Pages;
 use App\Filament\Resources\LiderancasResource\RelationManagers;
@@ -44,14 +45,12 @@ class LiderancasResource extends Resource
                 TextInput::make('cep')
                 ->required()
                 ->maxLength(9)
-                //->rule('formato_cep')
                 ->mask('99999-999')
                 ->placeholder('99999-999'),
                 TextInput::make('bairro')->required(),
                 TextInput::make('telefone')
-                //->rule('celular_com_ddd')
-                ->mask('(99) 99999-9999')
-                ->placeholder('(99) 99999-9999')
+                ->mask('(99)99999-9999')
+                ->placeholder('(99)99999-9999')
                 ->required(),
                 TextInput::make('telefone2'),
                 TextInput::make('email')
@@ -60,13 +59,14 @@ class LiderancasResource extends Resource
             ]);
     }
 
+
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
                 TextColumn::make('id'),
                 TextColumn::make('nome'),
-                TextColumn::make('Freduto.reduto')->label('Reduto'),
+                TextColumn::make('Treduto.reduto')->label('Reduto'),
                 TextColumn::make('telefone')->label('Telefone'),
                 TextColumn::make('email')->label('E-mail'),
             ])
@@ -79,7 +79,7 @@ class LiderancasResource extends Resource
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+                Tables\Actions\DeleteBulkAction::make(),
                 ]),
             ]);
     }

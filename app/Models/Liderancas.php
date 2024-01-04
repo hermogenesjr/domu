@@ -11,7 +11,6 @@ class Liderancas extends Model
     use HasFactory;
 
     protected $fillable = [
-        'id',
         'nome',
         'endereco',
         'cep',
