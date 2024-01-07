@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\UserResource\Pages;
 use App\Filament\Resources\UserResource\RelationManagers;
+use App\Models\Liderancas;
 use App\Models\User;
 use Filament\Forms;
 use Filament\Forms\Components\Select;
@@ -31,7 +32,13 @@ class UserResource extends Resource
         return $form
             ->schema([
                 //
-                TextInput::make('name')->required(),
+                Select::make('id_lideranca')
+                ->options(Liderancas::all()->pluck('nome','id'))
+                ->label('Selecione a liderança')
+                ->columnSpan(2),
+                TextInput::make('name')
+                    ->required()
+                    ->label('Nome do usuário'),
                 TextInput::make('email')->email(),
                 Password::make('password')
                 //->required()

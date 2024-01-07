@@ -19,10 +19,24 @@ use App\Models\Liderancas;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\TimePicker;
+use Filament\Tables\Filters\Filter;
+use Spatie\Permission\Models\Role;
 
 
 class EleitoresResource extends Resource
 {
+
+    //protected static ?string $model = Eleitores::class;
+
+    public static function getEloquentQuery(): Builder
+    {
+        if (auth()->user()->hasRole('Manager'))
+        {
+            return parent::getEloquentQuery()->where('id_lideranca', auth()->user()->id_lideranca);
+        } else {
+            return parent::getEloquentQuery();
+        }
+    }
 
     protected static ?string $model = Eleitores::class;
 
@@ -30,6 +44,7 @@ class EleitoresResource extends Resource
     protected static ?string $modelLabel = 'Eleitores';
 
     public static function form(Form $form): Form
+
     {
         return $form
             ->schema([
@@ -57,7 +72,7 @@ class EleitoresResource extends Resource
                 //->rule('celular_com_ddd')
                 ->mask('(99)99999-9999')
                 ->placeholder('(99)99999-9999'),
-                //->required(),                
+                //->required(),
                 TextInput::make('email')
                 //->required()
                 ->email(),
@@ -74,12 +89,12 @@ class EleitoresResource extends Resource
             ->columns([
                 TextColumn::make('id'),
                 TextColumn::make('nome'),
-                TextColumn::make('Flideranca.nome')->label('Reduto'),
+                TextColumn::make('Flideranca.nome')->label('Liderança'),
                 TextColumn::make('telefone')->label('Telefone'),
-                TextColumn::make('email')->label('E-mail'),                
+                TextColumn::make('email')->label('E-mail'),
             ])
             ->filters([
-                //
+                //Filter::make('eleitores', fn ($query) => $query->where('id', auth()->user()->id_lideranca)),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
