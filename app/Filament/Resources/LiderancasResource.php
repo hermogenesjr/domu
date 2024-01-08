@@ -66,7 +66,7 @@ class LiderancasResource extends Resource
             ->columns([
                 TextColumn::make('id'),
                 TextColumn::make('nome'),
-                TextColumn::make('Treduto.reduto')->label('Reduto'),
+                TextColumn::make('Freduto.reduto')->label('Reduto'),
                 TextColumn::make('telefone')->label('Telefone'),
                 TextColumn::make('email')->label('E-mail'),
             ])
