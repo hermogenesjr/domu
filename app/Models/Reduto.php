@@ -17,5 +17,6 @@ class Reduto extends Model
     protected $fillable = [
         'id',
         'reduto',
+        'gerente',
     ];
 }

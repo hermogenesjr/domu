@@ -27,6 +27,7 @@ class RedutoResource extends Resource
         return $form
             ->schema([
                 TextInput::make('reduto')->required(),
+                TextInput::make('gerente'),
             ]);
     }
 
@@ -36,6 +37,7 @@ class RedutoResource extends Resource
             ->columns([
                 TextColumn::make('id'),
                 TextColumn::make('reduto'),
+                TextColumn::make('gerente'),
             ])
             ->filters([
                 //

@@ -7,6 +7,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Filament\Widgets\TableWidget as BaseWidget;
 use Filament\Tables\Columns\TextColumn;
+use pxlrbt\FilamentExcel\Actions\Tables\ExportBulkAction;
 
 class AdminListaEleitores extends BaseWidget
 {
@@ -29,12 +30,16 @@ class AdminListaEleitores extends BaseWidget
                 TextColumn::make('id'),
                 TextColumn::make('nome')
                 ->searchable(),
-                TextColumn::make('Flideranca.nome')->label('Liderança')
+                TextColumn::make('Flideranca.nome')->label('Coordenador')
                 ->searchable(isIndividual:true),
                 TextColumn::make('telefone')->label('Telefone'),
                 TextColumn::make('email')->label('E-mail')->icon('heroicon-m-envelope'),
+            ])
+            ->bulkActions([
+                ExportBulkAction::make()
             ]);
     }
+
     public static function canView(): bool
     {
         return auth()->user()->hasRole('Admin');

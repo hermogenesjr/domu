@@ -22,13 +22,14 @@ use Illuminate\Http\Request;
 use LaravelLegends\PtBrValidator\Rules\FormatoCep;
 use Filament\Support\RawJs;
 use Filament\Forms\Components\TextInput\Pattern;
+use pxlrbt\FilamentExcel\Actions\Tables\ExportBulkAction;
 
 class LiderancasResource extends Resource
 {
     protected static ?string $model = Liderancas::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-cube-transparent';
-    protected static ?string $modelLabel = 'Lideranças';
+    protected static ?string $modelLabel = 'Coordenadores';
 
 
     public static function form(Form $form): Form
@@ -39,7 +40,7 @@ class LiderancasResource extends Resource
                 ->options(Reduto::all()->pluck('reduto','id'))
                 ->label('Reduto'),
                 TextInput::make('nome')
-                ->label('Nome da Liderança')
+                ->label('Nome do Coordenador')
                 ->required(),
                 TextInput::make('endereco')->required(),
                 TextInput::make('cep')
@@ -79,7 +80,8 @@ class LiderancasResource extends Resource
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
-                Tables\Actions\DeleteBulkAction::make(),
+                    ExportBulkAction::make(),
+                    Tables\Actions\DeleteBulkAction::make(),
                 ]),
             ]);
     }

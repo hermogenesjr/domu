@@ -41,7 +41,7 @@ class EleitoresResource extends Resource
     protected static ?string $model = Eleitores::class;
 
     protected static ?string $navigationIcon = 'heroicon-s-identification';
-    protected static ?string $modelLabel = 'Eleitores';
+    protected static ?string $modelLabel = 'Lideranças';
 
     public static function form(Form $form): Form
 
@@ -52,7 +52,7 @@ class EleitoresResource extends Resource
                 ->options(Liderancas::all()->pluck('nome','id'))
                 ->label('Liderança'),
                 TextInput::make('nome')
-                ->label('Nome do Eleitor')
+                ->label('Nome da Liderança')
                 ->required(),
                 TextInput::make('endereco')->required(),
                 TextInput::make('cep')
@@ -89,7 +89,7 @@ class EleitoresResource extends Resource
             ->columns([
                 TextColumn::make('id'),
                 TextColumn::make('nome'),
-                TextColumn::make('Flideranca.nome')->label('Liderança'),
+                TextColumn::make('Flideranca.nome')->label('Coordenador'),
                 TextColumn::make('telefone')->label('Telefone'),
                 TextColumn::make('email')->label('E-mail'),
             ])
