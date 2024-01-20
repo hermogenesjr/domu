@@ -8,6 +8,7 @@ use App\Models\Eleitores;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Forms\Components\TextInput;
+USE Filament\Forms\Components\Hidden;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\Select;
 use Filament\Resources\Resource;
@@ -48,9 +49,11 @@ class EleitoresResource extends Resource
     {
         return $form
             ->schema([
-                Select::make('id_lideranca')
-                ->options(Liderancas::all()->pluck('nome','id'))
-                ->label('Liderança'),
+                Hidden::make('id_lideranca')->default(auth()->user()->id_lideranca),
+                //Select::make('id_lideranca')
+                //->options(Liderancas::all()->pluck('nome','id'))
+                //->label('Coordenador')
+                //->disabled(true),
                 TextInput::make('nome')
                 ->label('Nome da Liderança')
                 ->required(),
@@ -113,6 +116,16 @@ class EleitoresResource extends Resource
             //
         ];
     }
+
+    public static function canCreate(): bool
+   {
+    if(auth()->user()->hasRole('Admin'))
+    {
+        return false;
+    } else {
+        return true;
+    }
+   }
 
     public static function getPages(): array
     {

@@ -24,9 +24,18 @@ class Eleitores extends Model
         'profissao',
     ];
 
+    public function FliderancaAll()
+    {
+        return $this->belongsTo(Liderancas::class, 'id_lideranca');
+    }
 
     public function Flideranca()
     {
-        return $this->belongsTo(Liderancas::class, 'id_lideranca');
+        if(auth()->user()->hasRole('Admin'))
+            {
+                return $this->belongsTo(Liderancas::class, 'id_lideranca');
+            } else {
+                return $this->belongsTo(Liderancas::class, auth()->user()->id_lideranca);
+            }
     }
 }

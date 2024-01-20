@@ -16,13 +16,16 @@ class AdminListaEleitores extends BaseWidget
 
     protected int | string | array $columnSpan = 'full';
 
+    protected static ?string $heading = 'teste';
+
+
     public function table(Table $table): Table
+
     {
         return $table
-
             ->query(EleitoresResource::getEloquentQuery())
 
-            ->defaultPaginationPageOption(5)
+            ->defaultPaginationPageOption(20)
 
             ->defaultSort('created_at', 'desc')
 
@@ -31,7 +34,7 @@ class AdminListaEleitores extends BaseWidget
                 TextColumn::make('nome')
                 ->searchable(),
                 TextColumn::make('Flideranca.nome')->label('Coordenador')
-                ->searchable(isIndividual:true),
+                ->searchable(),
                 TextColumn::make('telefone')->label('Telefone'),
                 TextColumn::make('email')->label('E-mail')->icon('heroicon-m-envelope'),
             ])

@@ -34,7 +34,7 @@ class UserResource extends Resource
                 //
                 Select::make('id_lideranca')
                 ->options(Liderancas::all()->pluck('nome','id'))
-                ->label('Selecione a liderança')
+                ->label('Selecione o coordenador')
                 ->columnSpan(2),
                 TextInput::make('name')
                     ->required()
