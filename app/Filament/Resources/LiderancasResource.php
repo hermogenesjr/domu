@@ -42,6 +42,7 @@ class LiderancasResource extends Resource
                     Select::make('id_reduto')
                     ->options(Reduto::all()->pluck('reduto','id'))
                     ->label('Reduto')
+                    ->required()
                     ->columnSpanFull(),
                     TextInput::make('nome')
                     ->label('Nome do Coordenador')
