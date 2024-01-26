@@ -16,6 +16,8 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\Select;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Filament\Forms\Components\Section;
+use Rawilk\FilamentPasswordInput\Password;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Http\Request;
@@ -36,27 +38,41 @@ class LiderancasResource extends Resource
     {
         return $form
             ->schema([
-                Select::make('id_reduto')
-                ->options(Reduto::all()->pluck('reduto','id'))
-                ->label('Reduto'),
-                TextInput::make('nome')
-                ->label('Nome do Coordenador')
-                ->required(),
-                TextInput::make('endereco')->required(),
-                TextInput::make('cep')
-                ->required()
-                ->maxLength(9)
-                ->mask('99999-999')
-                ->placeholder('99999-999'),
-                TextInput::make('bairro')->required(),
-                TextInput::make('telefone')
-                ->mask('(99)99999-9999')
-                ->placeholder('(99)99999-9999')
-                ->required(),
-                TextInput::make('telefone2'),
-                TextInput::make('email')
-                ->required()
-                ->email(),
+                Section::make('Dados Gerais')->schema([
+                    Select::make('id_reduto')
+                    ->options(Reduto::all()->pluck('reduto','id'))
+                    ->label('Reduto')
+                    ->columnSpanFull(),
+                    TextInput::make('nome')
+                    ->label('Nome do Coordenador')
+                    ->required(),
+                    TextInput::make('endereco')->required(),
+                    TextInput::make('cep')
+                    ->required()
+                    ->maxLength(9)
+                    ->mask('99999-999')
+                    ->placeholder('99999-999'),
+                    TextInput::make('bairro')->required(),
+                    TextInput::make('telefone')
+                    ->mask('(99)99999-9999')
+                    ->placeholder('(99)99999-9999')
+                    ->required(),
+                    TextInput::make('telefone2'),
+                ])->columns(2),
+
+                Section::make('Dados de Autenticação')->schema([
+                    TextInput::make('email')
+                    ->required()
+                    ->email(),
+                    Password::make('password')
+                    //->required()
+                    //->required( fn ($context): bool => $context =='create')
+                    //->dehydrated(false)
+                    ->required( fn ($context): bool => $context =='create')
+                    ->label('Password')
+                    //->dehydrateStateUsing(fn (string $state): string => Hash::make($state))
+                    ->dehydrated(fn (?string $state): bool => filled($state)),
+                ])
             ]);
     }
 

@@ -21,6 +21,7 @@ class Liderancas extends Model
         'telefone',
         'telefone2',
         'email',
+        'password',
         'id_reduto',
     ];
 
@@ -32,7 +33,7 @@ class Liderancas extends Model
             $user = User::create([
                 'name' => $model->nome,
                 'email' => $model->email,
-                'password' => Hash::make('senha aqui'),
+                'password' => Hash::make($model->password),
                 'id_lideranca' => $model->id
             ]);
 
