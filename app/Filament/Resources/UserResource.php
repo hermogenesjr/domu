@@ -44,6 +44,7 @@ class UserResource extends Resource
                 //->required()
                 //->required( fn ($context): bool => $context =='create')
                 //->dehydrated(false)
+                //teste branch staging
                 ->required( fn ($context): bool => $context =='create')
                 ->label('Password')
                 //->dehydrateStateUsing(fn (string $state): string => Hash::make($state))
