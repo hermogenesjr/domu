@@ -16,7 +16,7 @@ class AdminListaEleitores extends BaseWidget
 
     protected int | string | array $columnSpan = 'full';
 
-    protected static ?string $heading = 'teste';
+    protected static ?string $heading = 'Listagem geral de bases';
 
 
     public function table(Table $table): Table
