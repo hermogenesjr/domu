@@ -42,7 +42,7 @@ class EleitoresResource extends Resource
     protected static ?string $model = Eleitores::class;
 
     protected static ?string $navigationIcon = 'heroicon-s-identification';
-    protected static ?string $modelLabel = 'Lideranças';
+    protected static ?string $modelLabel = 'Base';
 
     public static function form(Form $form): Form
 
