@@ -22,7 +22,7 @@ class AdminStats extends BaseWidget
                 //->color('success')
                 //->descriptionIcon('heroicon-m-arrow-trending-up'),
             Stat::make(label: 'Total de Coordenadores', value: Liderancas::count()),
-            Stat::make(label: 'Total de Lideranças', value: Eleitores::count()),
+            Stat::make(label: 'Total nas Bases', value: Eleitores::count()),
             //dd(auth()->id())
         ];
     }
