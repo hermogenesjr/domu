@@ -55,7 +55,7 @@ class EleitoresResource extends Resource
                 //->label('Coordenador')
                 //->disabled(true),
                 TextInput::make('nome')
-                ->label('Nome da Liderança')
+                ->label('Nome')
                 ->required(),
                 TextInput::make('endereco')->required(),
                 TextInput::make('cep')
