@@ -63,6 +63,7 @@ class LiderancasResource extends Resource
 
                 Section::make('Dados de Autenticação')->schema([
                     TextInput::make('email')
+                    ->unique()
                     ->required()
                     ->email(),
                     Password::make('password')
