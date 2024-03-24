@@ -32,12 +32,15 @@ class AdminListaEleitores extends BaseWidget
             ->columns([
                 TextColumn::make('id'),
                 TextColumn::make('nome')
+                ->sortable(['nome'])
                 ->searchable(),
                 TextColumn::make('Flideranca.nome')->label('Coordenador')
                 ->searchable(),
                 TextColumn::make('telefone')->label('Telefone'),
-                TextColumn::make('email')->label('E-mail')->icon('heroicon-m-envelope'),
+                TextColumn::make('email')->label('E-mail')->icon('heroicon-m-envelope')
             ])
+            ->defaultSort('nome', 'asc')
+            ->paginated([25, 50, 100])
             ->bulkActions([
                 ExportBulkAction::make()
             ]);
