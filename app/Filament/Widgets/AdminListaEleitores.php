@@ -40,7 +40,7 @@ class AdminListaEleitores extends BaseWidget
                 TextColumn::make('email')->label('E-mail')->icon('heroicon-m-envelope')
             ])
             ->defaultSort('nome', 'asc')
-            ->paginated([25, 50, 100])
+            ->defaultPaginationPageOption(25)
             ->bulkActions([
                 ExportBulkAction::make()
             ]);
