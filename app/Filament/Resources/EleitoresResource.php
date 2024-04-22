@@ -57,32 +57,40 @@ class EleitoresResource extends Resource
                 TextInput::make('nome')
                 ->label('Nome')
                 ->required(),
-                TextInput::make('endereco')->required(),
+                TextInput::make('endereco')
+                ->label('Endereço (opcional)'),
                 TextInput::make('cep')
+                ->label('CEP (opcional)')
                 //->required()
                 ->maxLength(9)
                 //->rule('formato_cep')
                 ->mask('99999-999')
                 ->placeholder('99999-999'),
-                TextInput::make('bairro'),
+                TextInput::make('bairro')
+                ->label('Bairro (opcional)'),
                 //->required(),
-                TextInput::make('telefone')
+                TextInput::make('telefone')->required()
                 //->rule('celular_com_ddd')
                 ->mask('(99)99999-9999')
                 ->placeholder('(99)99999-9999'),
                 //->required(),
                 TextInput::make('telefone2')
+                ->label('Telefone2 (opcional)')
                 //->rule('celular_com_ddd')
                 ->mask('(99)99999-9999')
                 ->placeholder('(99)99999-9999'),
                 //->required(),
                 TextInput::make('email')
+                ->label('E-mail (opcional)')
                 //->required()
                 ->email(),
                 DatePicker::make('data_nascimento')
+                ->label('Data de Nascimento (opcional)')
                 ->format('d/m/Y'),
-                TextInput::make('profissao'),
-                TextInput::make('rede_social'),
+                TextInput::make('profissao')
+                ->label('Profissão (opcional)'),
+                TextInput::make('rede_social')
+                ->label('Rede Social (opcional)'),
             ]);
     }
 
