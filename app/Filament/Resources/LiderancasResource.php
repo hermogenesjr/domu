@@ -84,10 +84,10 @@ class LiderancasResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('id'),
-                TextColumn::make('nome'),
+                TextColumn::make('nome')->searchable(),
                 TextColumn::make('Freduto.reduto')->label('Reduto'),
                 TextColumn::make('telefone')->label('Telefone'),
-                TextColumn::make('email')->label('E-mail'),
+                TextColumn::make('email')->label('E-mail')->searchable(),
             ])
             ->filters([
                 //
