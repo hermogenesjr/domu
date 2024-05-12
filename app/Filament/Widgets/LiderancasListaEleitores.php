@@ -15,6 +15,8 @@ class LiderancasListaEleitores extends BaseWidget
 
     protected int | string | array $columnSpan = 'full';
 
+    protected static ?string $heading = 'Listagem da base';
+
     public function table(Table $table): Table
     {
         return $table
