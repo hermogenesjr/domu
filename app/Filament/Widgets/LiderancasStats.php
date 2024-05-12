@@ -13,7 +13,7 @@ class LiderancasStats extends BaseWidget
     protected function getStats(): array
     {
         return [
-            Stat::make(label: 'Total de contatos', value: Eleitores::where('id_lideranca', auth()->user()->id_lideranca)->count()),
+            Stat::make(label: 'Total da base', value: Eleitores::where('id_lideranca', auth()->user()->id_lideranca)->count()),
         ];
     }
     public static function canView(): bool
