@@ -99,7 +99,7 @@ class EleitoresResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('id'),
-                TextColumn::make('nome'),
+                TextColumn::make('nome')->searchable(),
                 TextColumn::make('Flideranca.nome')->label('Coordenador'),
                 TextColumn::make('telefone')->label('Telefone'),
                 TextColumn::make('email')->label('E-mail'),

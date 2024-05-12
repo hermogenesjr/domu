@@ -29,7 +29,7 @@ class LiderancasListaEleitores extends BaseWidget
 
             ->columns([
                 TextColumn::make('id'),
-                TextColumn::make('nome'),
+                TextColumn::make('nome')->searchable(),
                 //TextColumn::make('Flideranca.nome')->label('Liderança'),
                 TextColumn::make('telefone')->label('Telefone'),
                 TextColumn::make('email')->label('E-mail')->icon('heroicon-m-envelope'),
